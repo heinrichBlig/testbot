@@ -15,7 +15,7 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("hahahaha ")
+    resp.message("hahaha")
 
     return str(resp)
 
