@@ -17,18 +17,18 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("Hi, whats your name? ")
-
     if msg == "Heinrich":
-        resp.message("Hi {}".format(msg))
-
+       resp.message("Hi {}".format(msg))
     if msg == "1":
         resp.message(
-            "Good, and where do you want to live? 1. Johannesburg 2. Pretoria ")
-        elif msg == "2":
-            resp.message(
-                "This is Home bot 2: R200 ")
+            "This is Home bot: we help find you next home ")
+    elif msg == "2":
+        resp.message(
+            "This is Home bot 2: R200 ")
 
+    else:
+        resp.message(
+            "Hi, whats your name? ")
     return str(resp)
 
 
