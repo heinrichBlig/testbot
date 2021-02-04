@@ -17,6 +17,8 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
+     resp.message(
+            "Hi, whats your name? ")
     if msg == "Heinrich":
        resp.message("Hi {}".format(msg))
     if msg == "1":
@@ -26,9 +28,6 @@ def sms_reply():
         resp.message(
             "This is Home bot 2: R200 ")
 
-    else:
-        resp.message(
-            "Hi, whats your name? ")
     return str(resp)
 
 
