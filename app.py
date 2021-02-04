@@ -18,8 +18,8 @@ def sms_reply():
         resp.message("Hi, whats your name?")
          name = msg
        
-    elif msg != "" and  msg == name:
-        resp.message("Hi {}".format(msg) + ", what is your monthly budget? \n1. <R500 \n2. R600 – R1000 \n3. R1100 – R3000 \n4. R3000 or more")
+        if msg != "" and  msg == name:
+            resp.message("Hi {}".format(msg) + ", what is your monthly budget? \n1. <R500 \n2. R600 – R1000 \n3. R1100 – R3000 \n4. R3000 or more")
        
    
     else:
