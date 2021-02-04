@@ -15,6 +15,7 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
+     if msg == "Flats2rent":
         resp.message(
                 "Hi, whats your name?")
             if msg !="":
@@ -30,7 +31,8 @@ def sms_reply():
 
             else:
                 resp.message(
-                    "Hi, whats your name?")
+                     "Hi, whats your name?")
+        
         return str(resp)
 
 if __name__ == "__main__":
