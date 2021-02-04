@@ -15,16 +15,12 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-    if msg == "Flats2rent":
         resp.message(
                 "Hi, whats your name?")
             if msg !="":
                  resp.message(
-                     "Hi {}".format(msg) ',  what is your monthly budget?
-1. <R500
-2. R600 – R1000
-3. R1100 – R3000
-4. R3000 or more'  )
+                     "Hi {}".format(msg) ",  what is your monthly budget? 1. <R500 2. R600 – R1000 3. R1100 – R3000 4. R3000 or more
+"  )
             if msg == "1":
                 resp.message(
                     "This is Home bot: we help find you next home ")
