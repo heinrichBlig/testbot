@@ -17,6 +17,7 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
+     if msg == "Flats2rent":
      resp.message( "Hi, whats your name? ")
         
     if msg == "Heinrich":
@@ -27,9 +28,10 @@ def sms_reply():
     elif msg == "2":
         resp.message(
             "This is Home bot 2: R200 ")
-
+    else :
+        "User starts convo with words “Flats2rent"
     return str(resp)
-
+        
 
 if __name__ == "__main__":
     app.run(debug=True)
