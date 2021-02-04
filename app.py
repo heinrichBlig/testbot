@@ -17,9 +17,8 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-    if msg = "":
-       resp.message(
-          "Hi, whats your name? ")
+      resp.message(
+         "Hi, whats your name? ")
     
     if msg != "":
         resp.message(
