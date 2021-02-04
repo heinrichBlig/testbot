@@ -16,7 +16,12 @@ def sms_reply():
     # Create reply
     resp = MessagingResponse()
     if msg == "Flats2rent":
-        resp.message("You said: {}".format(msg))
+        resp.message("Hi, whats your name?")
+     name = msg 
+    elif name != " ":
+        resp.message("Hi {}".format(msg))
+       
+   
     else:
        resp.message("Enter Flats2rent to start ") 
     return str(resp)
