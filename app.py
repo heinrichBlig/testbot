@@ -12,7 +12,7 @@ def sms_reply():
     """Respond to incoming calls with a simple text message."""
     # Fetch the message
     msg = request.form.get('Body')
-     name ="name"
+    name ="name"
     # Create reply
     resp = MessagingResponse()
     if msg == "Flats2rent":
