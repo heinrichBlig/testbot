@@ -12,14 +12,12 @@ def sms_reply():
     """Respond to incoming calls with a simple text message."""
     # Fetch the message
     msg = request.form.get('Body')
-    counter = 0
     # Create reply
     resp = MessagingResponse()
     if msg == "Flats2rent":
-        counter += 1
+  
         resp.message("Hi, whats your name?")
             
-    if counter >= 2 :
         resp.message("Hi {}".format(msg) + ", what is your monthly budget? \n1. <R500 \n2. R600 – R1000 \n3. R1100 – R3000 \n4. R3000 or more")
      elif msg == "1":
         resp.message(
