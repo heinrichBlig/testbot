@@ -17,7 +17,7 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-    if msg = "Flats2rent":
+    if msg = "":
        resp.message(
           "Hi, whats your name? ")
     
