@@ -16,11 +16,10 @@ def sms_reply():
     # Create reply
     resp = MessagingResponse()
     if msg == "Flats2rent":
-        counter += 1;
+        counter += 1
         resp.message("Hi, whats your name?")
-        
-       
-   elif counter == 2:
+            
+   elif counter == 2 or counter == 3:
     resp.message("Hi {}".format(msg) + ", what is your monthly budget? \n1. <R500 \n2. R600 – R1000 \n3. R1100 – R3000 \n4. R3000 or more")
      elif msg == "1":
         resp.message(
