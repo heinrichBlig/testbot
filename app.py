@@ -18,7 +18,7 @@ def sms_reply():
     if msg == "Flats2rent":
         resp.message("Hi, whats your name?")
  
-    elif msg == "Heinrich ":
+    elif msg == "Heinrich":
         resp.message("Hi {}".format(msg))
        
    
