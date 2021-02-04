@@ -30,10 +30,6 @@ def sms_reply():
     elif msg == "2":
         resp.message(
             "This is Home bot 2: R200 ")
-
-    else:
-        resp.message(
-            "Hi, whats your name? ")
            
     return str(resp)
 
