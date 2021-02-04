@@ -17,7 +17,12 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
+    resp.message(
+            "Hi, whats your name? ")
     
+    if msg != "":
+        resp.message(
+            "Hi {}".format(msg))
 
     if msg == "1":
         resp.message(
@@ -29,9 +34,7 @@ def sms_reply():
     else:
         resp.message(
             "Hi, whats your name? ")
-            if msg != "":
-        resp.message(
-            "Hi {}".format(msg))
+           
     return str(resp)
 
 
