@@ -3,11 +3,9 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def hello():
-    return "Hello, This is Brandhue Chat app check out our website: http://brandhue.studio/"
-
+    return "Hello, World!"
 
 @app.route("/sms", methods=['POST'])
 def sms_reply():
@@ -17,21 +15,10 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-     if msg == "Flats2rent":
-     resp.message( "Hi, whats your name? ")
-        
-    if msg == "Heinrich":
-       resp.message("Hi {}".format(msg))
-    if msg == "1":
-        resp.message(
-            "This is Home bot: we help find you next home ")
-    elif msg == "2":
-        resp.message(
-            "This is Home bot 2: R200 ")
-    else :
-        "User starts convo with words “Flats2rent"
+    if msg == "Flats2rent":
+    resp.message("You said: {}".format(msg))
+
     return str(resp)
-        
 
 if __name__ == "__main__":
     app.run(debug=True)
