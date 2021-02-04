@@ -20,7 +20,7 @@ def sms_reply():
     if msg == "Flats2rent":
         count += 1
         resp.message("Hi, whats your name?" + count)
-    elif count >= 2:
+    elif  msg == "Heinrich":
         resp.message("Hi {}".format(msg) + ", what is your monthly budget? \n1. <R500 \n2. R600 – R1000 \n3. R1100 – R3000 \n4. R3000 or more")
     elif msg == "1":
         resp.message("Good, and where do you want to live? \n1. Johannesburg \n2. Pretoria ")
