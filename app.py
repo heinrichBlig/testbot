@@ -25,7 +25,7 @@ def sms_reply():
     if msg != "":
         resp.message(
             "Hi {}".format(msg)
-            "what is your monthly budget? 1. <R500 2. R600 – R1000 3. R1100 – R3000 4. R3000 or more ")
+          "what is your monthly budget? 1. <R500 2. R600 – R1000 3. R1100 – R3000 4. R3000 or more ")
 
     if msg == "1":
         resp.message(
