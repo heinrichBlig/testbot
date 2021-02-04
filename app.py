@@ -20,7 +20,7 @@ def sms_reply():
       resp.message(
          "Hi, whats your name? ")
     
-    if msg != "":
+    if msg == msg:
         resp.message(
             "Hi {}".format(msg))
 
