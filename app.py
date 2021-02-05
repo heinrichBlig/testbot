@@ -8,7 +8,6 @@ def hello():
 
 
 @app.route("/sms", methods=['POST'])
-name = ""
 def sms_reply():
     """Respond to incoming calls with a simple text message."""
     # Fetch the message
@@ -16,9 +15,7 @@ def sms_reply():
     # Create reply
     resp = MessagingResponse()
     if msg == "Flats2rent":
-        resp.message("Hi, whats your name?")
-      
-         
+        resp.message("Hi, whats your name?")       
     else:
          resp.message("start conv with 'Flats2rent' ")
     return str(resp)
