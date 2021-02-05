@@ -22,7 +22,7 @@ def sms_reply():
     if msg == name and number == 1:
     else:
         
-         resp.message("start conv with 'Flats2rent' " + number)
+         resp.message("start conv with 'Flats2rent' " number)
     return str(resp)
 
 
