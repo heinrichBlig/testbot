@@ -2,6 +2,7 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 app = Flask(__name__)
 name = " "
+number = 0
 @app.route("/")
 def hello():
     return "Hello, World!"
@@ -17,6 +18,8 @@ def sms_reply():
     if msg == "Flats2rent":
         resp.message("Hi, whats your name?")
         name = msg
+        number = 1
+    if msg == name and number == 1:
     else:
          resp.message("start conv with 'Flats2rent' ")
     return str(resp)
